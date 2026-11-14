@@ -1,0 +1,113 @@
+{
+  "record_counts": {
+    "responses": 17790,
+    "source_metadata_records": 2965,
+    "unique_response_ids": 17790,
+    "unique_source_ids_in_metadata": 2965,
+    "unique_source_ids_in_responses": 2965
+  },
+  "schema": {
+    "response_rows_missing_required_fields": 0,
+    "source_rows_missing_required_fields": 0
+  },
+  "ids_and_metadata": {
+    "duplicate_response_ids": {},
+    "duplicate_metadata_source_ids": {},
+    "responses_missing_metadata_count": 0,
+    "responses_missing_metadata_sample": [],
+    "duplicate_metadata_keys": []
+  },
+  "official_splits": {
+    "response_counts": {
+      "train": 15090,
+      "test": 2700
+    },
+    "train_test_response_id_overlap_count": 0,
+    "train_test_response_id_overlap_sample": [],
+    "train_test_source_id_overlap_count": 0,
+    "train_test_source_id_overlap_sample": [],
+    "sources_appearing_in_multiple_splits": 0,
+    "invalid_split_rows": 0
+  },
+  "quality": {
+    "quality_counts": {
+      "good": 17617,
+      "truncated": 29,
+      "incorrect_refusal": 144
+    },
+    "split_quality_counts": {
+      "train|good": 14942,
+      "test|good": 2675,
+      "train|truncated": 28,
+      "train|incorrect_refusal": 120,
+      "test|incorrect_refusal": 24,
+      "test|truncated": 1
+    }
+  },
+  "task_and_model_distributions": {
+    "task_counts": {
+      "Summary": 5658,
+      "Data2txt": 6198,
+      "QA": 5934
+    },
+    "split_task_counts": {
+      "train|Summary": 4758,
+      "test|Summary": 900,
+      "train|Data2txt": 5298,
+      "test|Data2txt": 900,
+      "train|QA": 5034,
+      "test|QA": 900
+    },
+    "model_counts": {
+      "gpt-4-0613": 2965,
+      "gpt-3.5-turbo-0613": 2965,
+      "mistral-7B-instruct": 2965,
+      "llama-2-7b-chat": 2965,
+      "llama-2-13b-chat": 2965,
+      "llama-2-70b-chat": 2965
+    },
+    "invalid_task_rows": 0
+  },
+  "response_level_label_proxy": {
+    "definition": "has_hallucination = labels is a nonempty list; this is a proxy based on annotations, not a new independent ground-truth assessment",
+    "all_quality_label_counts": {
+      "train|has_hallucination=False": 8369,
+      "train|has_hallucination=True": 6721,
+      "test|has_hallucination=False": 1757,
+      "test|has_hallucination=True": 943
+    },
+    "good_quality_label_counts": {
+      "train|has_hallucination=False": 8244,
+      "train|has_hallucination=True": 6698,
+      "test|has_hallucination=False": 1732,
+      "test|has_hallucination=True": 943
+    }
+  },
+  "source_group_sizes": {
+    "responses_per_source_distribution": {
+      "6": 2965
+    },
+    "sources_with_unexpected_response_count": 0
+  },
+  "annotation_validation": {
+    "total_annotation_spans": 14289,
+    "response_rows_with_non_list_labels": 0,
+    "malformed_annotation_spans": 0,
+    "annotations_missing_required_fields": 0,
+    "offsets_out_of_range": 0,
+    "annotation_text_mismatches": 0,
+    "implicit_true_spans": 1928,
+    "unexpected_implicit_true_values": 0,
+    "label_type_counts": {
+      "Evident Conflict": 5324,
+      "Evident Baseless Info": 6237,
+      "Subtle Baseless Info": 2527,
+      "Subtle Conflict": 201
+    }
+  },
+  "response_text_validation": {
+    "missing_or_empty_responses": 0,
+    "invalid_label_rows": 0
+  },
+  "parsing_issues": []
+}

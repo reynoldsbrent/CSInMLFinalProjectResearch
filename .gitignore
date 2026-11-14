@@ -1,0 +1,19 @@
+# The upstream RAGTruth clone has its own Git repository.
+RAGTruth/
+
+# Raw and generated dataset files should not be committed to the research repo.
+data/raw/
+data/processed/
+*.jsonl
+
+# Python caches and local environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Notebook and experiment-generated files.
+.ipynb_checkpoints/
+results/models/
+results/predictions/
+wandb/
